@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.arrival-img{
+    height: 200px;
+    width: 200px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.navbar-links{
+    display: flex;
+    column-gap: 20px;
+}
+.navbar-links{
+    text-decoration: none;
+    color: blue;
+    cursor: pointer; 
+}
+.navbar-links a:hover{
+    text-decoration: underline;
+    color: black;
+}
+.navbar-menu-toggle{
+    display: none;
+}
+
+/* side-navbar */
+
+.side-navbar{
+    background-color: black;
+    width: 40%;
+    height: 100%;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: -60%;
+    padding: 30px;
+    transition: 1.5s;
+}
+.side-navbar-link{
+    margin-bottom: 30px;
+}
+.side-navbar-links a{
+    text-decoration: none;
+    color: white;
+}
+.side-navbar-links a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.header-image{
+    height: 300px;
+    width: 300px;
+}
+.Header{
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    padding: 50px;
+}
+.Header-btn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(241, 41, 41);
+    margin-top: 20px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.service{
+    padding: 20px;
+}
+.service-container-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.service-container-2{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.service-container-2 div{
+    border-radius: 5px;
+    background-color: rgb(211, 207, 207);
+    padding: 10px;
+}
+.new-arrival{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.new-arrival button:hover{
+    background-color: black;
+    color: white;
+}
+.new-arrival a{
+    text-decoration: none;
+}
+.new-arrival-container{
+    position: relative;
+    flex-basis: 20%;
+}
+.new-arrival button{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+    position: absolute;
+    top: 50%;
+    left: 18%;
+    border-radius: 10px;
+    border: none;
+}
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.news input{
+    padding: 11px;
+    width: 80vw;
+    margin-bottom: 10px;
+    border: solid black 3px;
+}
+.news button{
+    margin-top: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.footer{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+
+.product-section{
+    margin-top: 20px;
+}
+.product-section img{
+    height: 300px;
+    width: 300px;
+}
+
+.product-search{
+    width: 80%;
+    border: solid black 2px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin:auto ;
+}
+.product-search input{
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+.product-search input:focus{
+    outline: none;
+}
+.products p{
+    text-align: center;
+    font-weight: bold;
+}
+.products{
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.products-box{
+    text-align: center;
+    flex-basis: 20%;
+}
+.product-box img{
+    border-radius: 10px;
+}
+
+.contact{
+    display: flex;
+    /* background-color: rgb(71, 69, 69); */
+    padding: 30px;
+    margin: 10px;
+    justify-content: center;
+}
+.contact-page{
+    background-color: rgb(68, 66, 66);
+    padding: 30px;
+    border-radius: 10px;
+    padding: 40px;
+    color: white;
+    font-weight: 200;
+}
+.contact button{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(19, 19, 230);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+.contact h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.contact input{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 600px;
+    border-radius: 10px;
+    border: none;
+}
+
+
+
+@media screen and (max-width:700px) {
+    .navbar-menu-toggle{
+        display: block;
+    }
+    .navbar-links{
+        display: none;
+    }
+    .header-image{
+        display: none;
+    }
+    .service-container-1{
+        display: none;
+    }
+    .service-container-2{
+        flex-direction: column;
+    }
+
+    
+}
+
